@@ -176,6 +176,11 @@ section { padding: clamp(64px, 9vw, 120px) 0; }
 .panel h2 { font-size: 30px; }
 .panel ul { color: var(--muted); padding-left: 20px; }
 
+.policy h2 { font-size: 28px; margin: 44px 0 10px; }
+.policy h3 { font-family: var(--body); font-weight: 700; font-size: 18px; margin: 22px 0 6px; }
+.policy p { color: var(--muted); margin: 0 0 14px; }
+.policy a { word-break: break-word; }
+
 /* ---- footer ---- */
 .site-foot { border-top: 1px solid var(--line); padding: 36px 0 44px; color: var(--muted); font-size: 14.5px; }
 .site-foot .wrap { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; align-items: center; }
