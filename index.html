@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Young+Serif&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=5">
+<link rel="stylesheet" href="/assets/site.css?v=6">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -23,7 +23,7 @@
 <header class="site-head">
   <div class="wrap">
     <a class="brand" href="/" aria-label="Fusion Wizard Apps, home">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 L25 26 H7 Z" fill="none" stroke="#f2c35b" stroke-width="1.6" stroke-linejoin="round"/><path d="M4 26.5 H28" stroke="#63e1d5" stroke-width="1.6" stroke-linecap="round"/><circle cx="16" cy="3" r="2.2" fill="#f2c35b"/><circle cx="14" cy="16" r="1.4" fill="#f2ead6"/><circle cx="19" cy="21" r="1.1" fill="#63e1d5"/></svg>
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M9 23.5 L12.5 13 L15.5 6.5 L20 3.5 L27 5.5 L21 7.5 L21.5 15 L23 23.5" fill="none" stroke="#f2c35b" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/><path d="M3 23.5 Q16 29.5 29 23" fill="none" stroke="#63e1d5" stroke-width="1.6" stroke-linecap="round"/><circle cx="27" cy="5.5" r="2.2" fill="#f2c35b"/><path d="M16.5 14 l.9 2 2 .9 -2 .9 -.9 2 -.9 -2 -2 -.9 2 -.9 z" fill="#f2ead6"/></svg>
       Fusion Wizard <small>Apps</small>
     </a>
     <nav class="nav" aria-label="Main">
@@ -47,34 +47,43 @@
         </div>
       </div>
 
-      <!-- A wizard's hat drawn as a constellation: the studio's mark, and a nod to connecting things. -->
+      <!-- A wizard's hat traced in stars: wide brim, a cone whose tip bends over, a band with a buckle star. -->
       <svg class="hat rise d2" viewBox="0 0 420 420" role="img" aria-label="A wizard's hat traced in stars">
         <defs>
-          <radialGradient id="halo" cx="50%" cy="45%" r="50%">
+          <radialGradient id="halo" cx="50%" cy="50%" r="50%">
             <stop offset="0%" stop-color="#63e1d5" stop-opacity=".18"/>
             <stop offset="60%" stop-color="#f2c35b" stop-opacity=".05"/>
             <stop offset="100%" stop-color="#0b0f22" stop-opacity="0"/>
           </radialGradient>
         </defs>
-        <circle class="halo" cx="210" cy="200" r="200"/>
-        <path class="thread" d="M226 44 L196 120 L238 168 L176 226 L262 262 L150 300 L300 312"/>
-        <path class="thread" d="M226 44 L292 150 L330 300 L300 312"/>
-        <path class="thread" d="M226 44 L150 300"/>
-        <path class="thread brim" d="M70 330 Q210 372 352 322"/>
-        <circle class="star gold" cx="226" cy="44" r="7"/>
-        <circle class="star" cx="196" cy="120" r="3.6"/>
-        <circle class="star aqua" cx="238" cy="168" r="4.2"/>
-        <circle class="star" cx="176" cy="226" r="3.4"/>
-        <circle class="star gold" cx="262" cy="262" r="4.6"/>
-        <circle class="star" cx="150" cy="300" r="4"/>
-        <circle class="star aqua" cx="300" cy="312" r="4"/>
-        <circle class="star" cx="292" cy="150" r="3"/>
-        <circle class="star" cx="330" cy="300" r="3.4"/>
-        <circle class="star aqua" cx="70" cy="330" r="3.4"/>
-        <circle class="star gold" cx="352" cy="322" r="3.6"/>
-        <circle class="star" cx="96" cy="96" r="2"/>
-        <circle class="star" cx="350" cy="80" r="2.4"/>
-        <circle class="star gold" cx="60" cy="210" r="2.2"/>
+        <circle class="halo" cx="212" cy="210" r="200"/>
+        <!-- brim: the back edge faint, the front edge bright -->
+        <path class="thread brim back" d="M40 300 Q212 250 384 296"/>
+        <path class="thread brim" d="M40 300 Q212 374 384 296"/>
+        <!-- cone: left edge up to the bend, the tip drooping forward, then the right edge back down -->
+        <path class="thread" d="M138 298 L158 230 L180 166 L200 114 L226 76 L262 50 L318 64 L270 86 L266 150 L274 222 L286 294"/>
+        <!-- band -->
+        <path class="thread band" d="M146 270 L282 266"/>
+        <path class="sparkle" d="M222 176 L226.5 186 L236 190 L226.5 194 L222 204 L217.5 194 L208 190 L217.5 186 Z"/>
+        <circle class="star gold" cx="318" cy="64" r="7"/>
+        <circle class="star" cx="262" cy="50" r="3.6"/>
+        <circle class="star" cx="226" cy="76" r="3"/>
+        <circle class="star aqua" cx="200" cy="114" r="3.6"/>
+        <circle class="star" cx="180" cy="166" r="3"/>
+        <circle class="star" cx="158" cy="230" r="3.4"/>
+        <circle class="star gold" cx="138" cy="298" r="4.2"/>
+        <circle class="star" cx="270" cy="86" r="3"/>
+        <circle class="star aqua" cx="266" cy="150" r="3.4"/>
+        <circle class="star" cx="274" cy="222" r="3"/>
+        <circle class="star gold" cx="286" cy="294" r="4.2"/>
+        <circle class="star gold" cx="214" cy="268" r="5"/>
+        <circle class="star aqua" cx="40" cy="300" r="4"/>
+        <circle class="star aqua" cx="384" cy="296" r="4"/>
+        <circle class="star gold" cx="212" cy="337" r="4"/>
+        <circle class="star" cx="80" cy="96" r="2"/>
+        <circle class="star" cx="360" cy="150" r="2.4"/>
+        <circle class="star gold" cx="70" cy="200" r="2.2"/>
+        <circle class="star" cx="340" cy="372" r="1.8"/>
       </svg>
     </div>
   </section>
@@ -109,7 +118,7 @@
         </article>
 
         <article class="card card-small">
-          <div class="icon mono mono-dash" role="img" aria-label="Road Dash">RD</div>
+          <img class="icon" src="/assets/img/road-dash-icon.webp" width="76" height="76" alt="Road Dash app icon" loading="lazy">
           <h3>Road Dash</h3>
           <p>Dash through traffic and master the road in this high-speed vertical racer.</p>
           <div class="meta">
@@ -120,7 +129,7 @@
         </article>
 
         <article class="card card-small">
-          <div class="icon mono mono-robo" role="img" aria-label="RoboDev Learn">RL</div>
+          <img class="icon" src="/assets/img/robodev-icon.webp" width="76" height="76" alt="RoboDev Learn app icon" loading="lazy">
           <h3>RoboDev Learn</h3>
           <p>A beautiful robotics learning app for curious kids and builders.</p>
           <div class="meta">
